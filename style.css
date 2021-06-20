@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --clr-cyan: hsl(179, 62%, 43%);
+  --clr-brightYellow: hsl(71, 73%, 54%);
+  --clr-lightGray: hsl(204, 43%, 93%);
+  --clr-grayishBlue: hsl(218, 22%, 67%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Karla", sans-serif;
+  background: var(--clr-lightGray);
+}
+.card-holder {
+  /* other base styles go here */
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.card {
+  position: absolute;
+  width: 625px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 80px 40px;
+}
+#card__top {
+  padding: 42px 40px;
+  background: white;
+}
+
+#title {
+  color: var(--clr-cyan);
+  margin-bottom: 30px;
+  font-family: "Karla", sans-serif;
+  font-weight: 800;
+}
+
+#subtitle {
+  color: var(--clr-brightYellow);
+  margin-bottom: 30px;
+}
+
+#info {
+  color: var(--clr-grayishBlue);
+}
+
+#card__bottom {
+  display: flex;
+  color: var(--clr-lightGray);
+}
+
+.cb-l,
+.cb-r {
+  padding: 40px 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.cb-l {
+  background-color: var(--clr-cyan);
+}
+.cb-r {
+  background-color: hsl(179, 62%, 53%);
+}
+
+.bl-title,
+.br-title {
+  margin-bottom: 20px;
+  font-family: "Karla", sans-serif !important;
+  font-size: 16px;
+  color: var(--clr-lightGray);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#amount {
+  font-size: 34px;
+  font-family: "Karla", sans-serif;
+  margin-right: 20px;
+}
+#duration {
+  opacity: 0.7;
+}
+
+button {
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  padding: 14px;
+  box-shadow: 0px 1px 8px rgb(99, 99, 99);
+  background-color: var(--clr-brightYellow);
+  color: var(--clr-lightGray);
+  font-size: 18px;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  margin-top: 34px;
+}
+button:hover {
+  filter: brightness(1.05);
+}
+
+.bl-info {
+  font-size: 15px;
+}
+
+ul {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+li {
+  margin-top: 4px;
+}
+
+@media (max-width: 645px) {
+  h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .card {
+    width: 375px;
+    height: 100%;
+    padding: 20px;
+  }
+  #card__bottom {
+    flex-direction: column;
+  }
+
+  .cb-l,
+  .cb-r {
+    width: 100%;
+  }
+}
