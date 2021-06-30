@@ -2,48 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <title>Single Price Grid Component</title>
+    <title>Single price Grid</title>
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <div class="card-holder">
+    <div class="container">
       <div class="card">
-        <div class="card__top" id="card__top">
-          <h1 id="title">Join our Community</h1>
-          <h2 id="subtitle">30-day, hassle-free money back guarantee</h2>
-          <p id="info">
+        <div class="card__top">
+          <h4 class="card__top__title">Join our Community</h4>
+          <h6 class="card__top__subtitle">
+            30-day, hassle-free money back guarantee
+          </h6>
+          <p class="card__top__info">
             Gain access to our full library of tutorials along with expert code
-            reviews. <br />
-            Perfect for any developers who are serious about honing their
-            skills.
+            reviews.Perfect for any developers who are serious about honing
+            their skills.
           </p>
         </div>
-        <div class="card__botton" id="card__bottom">
-          <div class="cb-l">
-            <h2 class="bl-title">Monthly Subscription</h2>
-            <div class="price">
-              <h1 id="amount">$29</h1>
-              <p id="duration">per month</p>
+        <div class="card__bottom">
+          <div class="card__bottom__left">
+            <h4 class="card__bottom__left__title">Monthly Subscription</h4>
+            <div class="pricing">
+              <h6 class="money">$29</h6>
+              <p class="duration">per month</p>
             </div>
 
-            <p class="bl-info">Full access for less than $1 a day</p>
+            <p>Full access for less than $1 a day</p>
             <button id="signup">Sign Up</button>
           </div>
-
-          <div class="cb-r">
-            <h2 class="br-title">Why us</h2>
+          <div class="card__bottom__right">
+            <h4 class="card__bottom__right__title">Why Us</h4>
             <ul>
               <li>Tutorials by industry experts</li>
               <li>Peer &amp; expert code review</li>
@@ -57,14 +47,5 @@
         </div>
       </div>
     </div>
-
-    <!-- <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Manav Khadka</a>.
-      </p>
-    </footer> -->
   </body>
 </html>
